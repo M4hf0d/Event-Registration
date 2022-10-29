@@ -1,0 +1,22 @@
+{% extends "base.html"%} {% block title %} 🗓️ {{event.name}} {% endblock title %} {% block body %}
+<h1>{{event.name}}</h1>
+<p>{{event.description}}</p>
+
+
+<div>
+    <h3> <b>{{event.name}}</b>  Participants </h3>
+    {% for p in event.participants.all %}
+        <strong> {{p.name}} </strong>
+    {% endfor %}
+</div>
+
+
+{% if registered %}
+    <h4> You are registered</h4>
+    <a href="{% url 'psubmission' pk=event.id %}"> Submit Project</a>
+   
+{% else %}
+    <a href="{% url 'registration_confirmaton' pk=event.id %}">Register </a> 
+{% endif %}
+
+{% endblock body %}

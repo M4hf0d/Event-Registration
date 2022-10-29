@@ -1,0 +1,33 @@
+{% extends "base.html"%} 
+{% block title %} 🏠 Home {% endblock title %}
+{% block body %}
+<section>
+    <h3>
+        Events
+    </h3>
+    <div id="events-list">
+        {% for event in events %}
+        <div>
+            <a href="{% url 'event_page' pk=event.id %}">{{event.name}}</a>
+
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section>
+    <h3>
+        Participants
+    </h3>
+    <div id="participants-list">
+        {% for user in users %}
+        <div>
+            <a href="{% url 'profile' pk=user.id %}">{{user.name}}</a>
+
+            
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock body %}
