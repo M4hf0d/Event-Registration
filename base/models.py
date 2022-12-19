@@ -25,7 +25,7 @@ class Event(models.Model):
         return self.name
 
 class Submission(models.Model):
-    participant = models.ForeignKey(User, on_delete = models.SET_NULL , null = True)
+    participant = models.ForeignKey(User, on_delete = models.SET_NULL , null = True , related_name="submission")
     event = models.ForeignKey(Event, on_delete = models.SET_NULL, null = True)
     details = models.TextField(max_length =255, null = True, blank = True)
     
