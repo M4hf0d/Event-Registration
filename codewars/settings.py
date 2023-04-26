@@ -133,11 +133,11 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('PGDATABASE'),
-        'USER':os.environ.get('PGUSER'),
-        'PASSWORD':os.environ.get('PGPASSWORD'),
-        'HOST':os.environ.get('PGHOST'),
-        'PORT':os.environ.get('PGPORT')
+        'NAME': "railway",
+        'USER':"postgres",
+        'PASSWORD':"wMhPqoNzlhT1McKhWoY2",
+        'HOST':"postgresql://postgres:wMhPqoNzlhT1McKhWoY2@containers-us-west-164.railway.app:7727/railway",
+        'PORT':"7727"
     }
 }
 
