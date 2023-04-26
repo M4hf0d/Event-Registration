@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-h(z*z1_^f_y^6emrm%#j0g1q74aqkdtwaz5wuju%3u+#(@nzrx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [    'localhost',    '127.0.0.1',    'example.com',    'event-registration-production.up.railway.app']
 
 AUTH_USER_MODEL = 'base.User'
 
