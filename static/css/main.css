@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0; */
             font-family: -apple-system-body, BlinkMacSystemFont, sans-serif;
-        }
-        
+         }
         h1,
         h2,
         h3,
@@ -60,7 +59,7 @@
             padding: 10px 20px;
             border-radius: 4px;
             text-decoration: none;
-            /* background-color: rgb(204, 204, 204); */
+            background-color: rgb(204, 204, 204);
             color: black;
             display: block;
             width: fit-content;
@@ -161,7 +160,7 @@
             padding: 2em;
             border-radius: 5px;
         }
-        
+      
         .event__preview--title {
             font-size: 22px;
             text-decoration: none;
@@ -333,18 +332,18 @@
         }
         
         input.form-field--input,
+        .form-field--wrapper input,
         input#id_password1,
         input#id_password2 {
-            width: 100%;
-            height: 55px;
+            /* width: 100%;
+            height: 55px; */
             border: 1px solid #000000;
-            padding: 20px;
+            padding: 10px;
         }
-        
         textarea.form-field--input-txarea {
-            width: 100%;
+            /* width: 100%; */
             border: 1px solid #000000;
-            padding: 20px;
+            /* padding: 20px; */
         }
         
         .login-email,
